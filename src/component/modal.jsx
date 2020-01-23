@@ -7,7 +7,8 @@ const ModalExample = (props) => {
         title,
         className,
         toggle,
-        actionFunc
+        actionFunc,
+        buttonName
     } = props;
 
     return (
@@ -18,7 +19,7 @@ const ModalExample = (props) => {
                     {props.children}
                 </ModalBody>
                 <ModalFooter>
-                <Button color="primary" onClick={actionFunc}>Save</Button>{' '}
+                <Button color="primary" onClick={actionFunc}>{buttonName}</Button>{' '}
                 <Button color="secondary" onClick={toggle}>Cancel</Button>
             </ModalFooter>
             </Modal>
